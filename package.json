@@ -1,0 +1,72 @@
+{
+  "name": "@mszr/h3-dux",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "DX-first h3 and Nitro routes with honest typed clients, validation, streaming, and OpenAPI",
+  "author": "Mares (https://github.com/mareszhar)",
+  "license": "MIT",
+  "homepage": "https://github.com/mareszhar/h3-dux",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mareszhar/h3-dux.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mareszhar/h3-dux/issues"
+  },
+  "keywords": [
+    "h3",
+    "nitro",
+    "fetchdts",
+    "type-safe",
+    "typed-fetch",
+    "standard-schema",
+    "routes",
+    "sse",
+    "openapi",
+    "dx"
+  ],
+  "sideEffects": false,
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./nitro": {
+      "types": "./dist/nitro.d.mts",
+      "import": "./dist/nitro.mjs"
+    },
+    "./codegen": {
+      "types": "./dist/codegen.d.mts",
+      "import": "./dist/codegen.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "h3": ">=2.0.1-rc.22 <3.0.0",
+    "nitro": "^3.0.0",
+    "typescript": ">=5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "nitro": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@mszr/selenita": "^0.2.2",
+    "@standard-schema/spec": "^1.1.0",
+    "@types/node": "^25",
+    "h3": ">=2.0.1-rc.22 <3.0.0",
+    "nitro": "^3.0.0",
+    "obuild": "^0.4.36",
+    "typescript": "^6.0.3",
+    "valibot": "^1.4.1",
+    "vitest": "^4.1.7"
+  }
+}

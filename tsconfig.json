@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@mszr/h3-dux": ["./src/index.ts"],
+      "@mszr/h3-dux/nitro": ["./src/nitro.ts"],
+      "@mszr/h3-dux/codegen": ["./src/codegen.ts"],
+      "@test": ["./src/test-support/index.ts"]
+    },
+    "types": ["@types/node"]
+  },
+  "include": ["src"]
+}
